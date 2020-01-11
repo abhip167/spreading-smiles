@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body id="body"></body>
+  <script>
+    let ImageArray = [];
+    fetch("images")
+      .then(Response => Response.json())
+      // .then(Response => console.log(Response))
+      .then(Response => (Response = Object.entries(Response)))
+      .then(Response => {
+        var img = new Image();
+        img.src = `./assets/${Response[0][0]}/${Response[0][1][0]}`;
+        document.getElementById("body").appendChild(img);
+      });
+    // .then(Response => (ImageArray = Response));
+
+    console.log(ImageArray);
+  </script>
+</html>
