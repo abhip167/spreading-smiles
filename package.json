@@ -1,13 +1,16 @@
 {
-  "name": "SpreadingSmiles",
-  "description": "Our sample Node to Heroku app",
+  "name": "test-production",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "node index.js",
     "start": "node index.js"
   },
-  "devDependencies": {
+  "author": "Abhishek Patel",
+  "license": "ISC",
+  "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "express": "^4.17.1"
   }
 }

@@ -1,0 +1,3 @@
+RED - #f95547
+YELLOW - #fbd72b
+MID YELLOW-RED - #fa9838
