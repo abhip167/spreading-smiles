@@ -2755,6 +2755,12 @@ footer p {
 }
 
 /*17.3 Portfolio Filtering*/
+
+.portfolio-filter div{
+	display: inline-block;
+
+}
+
 .portfolio-filter {
   text-align: center;
   margin-bottom: 30px;
@@ -3298,6 +3304,11 @@ footer p {
 .btn {
   background-color: #f57d2c;
   border: 1px solid #d05600;
+  margin: 5px;
+}
+
+.imageGalleryButton {
+	font-size: 1.5em;
 }
 
 .btn.focus,
