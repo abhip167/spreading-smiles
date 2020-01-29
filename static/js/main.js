@@ -16,10 +16,10 @@
 	Counter-up
   ------------------------------ */
 
-  $(".counter").counterUp({
-    delay: 10,
-    time: 1000
-  });
+  // $(".counter").counterUp({
+  //   delay: 10,
+  //   time: 1000
+  // });
   /*----------------------------
      Video Popup JS
 	----------------------------*/
@@ -161,8 +161,12 @@ Project Carousel
       var scrollTop = windows.scrollTop();
       if (scrollTop > header_height) {
         $(".main-navigation").addClass("sticky");
+        $("#logo").attr("src","img/ss-logo-mobile.svg");
+        $(".main-menu ul li a").css("color","#323657");
       } else {
         $(".main-navigation").removeClass("sticky");
+        $("#logo").attr("src","img/ss-logo-mobile-yellow.svg");
+        $(".main-menu ul li a").css("color","yellow");
       }
     });
   }
@@ -171,12 +175,12 @@ Project Carousel
   /*-----------------
 	Scroll-Up
 	-----------------*/
-  $.scrollUp({
-    scrollText: '<i class="far fa-arrow-alt-circle-up"></i>',
-    easingType: "linear",
-    scrollSpeed: 1000,
-    animation: "fade"
-  });
+  // $.scrollUp({
+  //   scrollText: '<i class="far fa-arrow-alt-circle-up"></i>',
+  //   easingType: "linear",
+  //   scrollSpeed: 1000,
+  //   animation: "fade"
+  // });
   /*-----------------
     POrtfolio Filter
     -----------------*/

@@ -416,7 +416,7 @@ ul {
 }
 
 .main-menu ul li a {
-  color: #323657;
+  color: yellow;
   display: inline-block;
   text-transform: capitalize;
   font-size: 18px;
@@ -428,7 +428,7 @@ ul {
 }
 
 .main-menu ul li a:hover {
-  color: #880b00;
+  color: #880b00 !important;
 }
 
 .main-menu ul li a:before {
@@ -587,6 +587,8 @@ ul.dropdown li a:after {
 
 /*2.3 Sticy Menu CSS*/
 
+
+
 .main-navigation.sticky {
   position: fixed;
   top: 0;
@@ -735,11 +737,12 @@ ul.dropdown li a:after {
 /*======= 3. Header Area CSS =========*/
 
 
+
 .color-overlay {
   width: 100%;
   height: 100%;
-  background: #ffff009c;
-  opacity: 1;
+  background: #651b00;
+  opacity: 0.5;
   position: absolute;
 }
 .header-content-area {
@@ -872,7 +875,7 @@ ul.dropdown li a:after {
   text-transform: capitalize;
   font-size: 8em;
   line-height: 65px;
-  color: #c0140d;
+  color: #ffc107;
   margin-bottom: 10px;
   font-weight: 900;
   font-family: BlendaScript;
@@ -1660,7 +1663,7 @@ item-icon button {
 .big-footer {
   background-color: #c1170d;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23a4140b' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
-  padding: 120px 0;
+  padding: 80px 0;
   /* background-color: #c1170d;
 	background-image: url('img/footer-bg.jpg');
 	background-size: cover;
@@ -2396,10 +2399,15 @@ footer p {
   padding: 160px 0 120px 0;
 }
 
+.donate-area {
+  background-color: #fff;
+  padding: 100px 0 120px 0;
+}
+
 /*16.1 Contact Us Banner*/
 .contact-hero-banner {
   background-color: #fff;
-  background-image: url(img/about-us-banner.png);
+  background-image: url(img/contact-banner.png);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -2518,10 +2526,21 @@ footer p {
 .single-contact-info {
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
-  box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
+  box-shadow: 0px 2px 25px rgba(82, 82, 82, 0.25);
   padding: 80px 0;
   text-align: center;
   margin: 0 20px;
+  border-radius: 5%;
+}
+
+.single-donate-info {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
+  box-shadow: 0px 2px 25px rgba(82, 82, 82, 0.25);
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 5%;
 }
 
 .info-icon {
@@ -2938,7 +2957,7 @@ footer p {
 /*19.1 About Us Banner*/
 .about-hero-banner {
   background-color: #fff;
-  background-image: url(img/about-us-banner.png);
+  background-image: url(img/health-banner.png);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -2963,7 +2982,7 @@ footer p {
 /* About Hero Baner For Education */
 .about-hero-banner-education {
   background-color: #fff;
-  background-image: url(img/education.png);
+  background-image: url(img/education-banner.png);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -2985,6 +3004,57 @@ footer p {
   /* background-color: rgba(0, 0, 0, 0.45); */
 }
 
+
+/* About Hero Baner For Swacchta */
+.about-hero-banner-swacchta {
+  background-color: #fff;
+  background-image: url(img/swacchta-banner.png);
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-hero-banner-swacchta img {
+  width: 100%;
+}
+
+.about-hero-banner-swacchta:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  /* background-color: rgba(0, 0, 0, 0.45); */
+}
+
+/* About Hero Baner For Donate */
+.about-hero-banner-donate {
+  background-color: #fff;
+  background-image: url(img/donate-banner.png);
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-hero-banner-donate img {
+  width: 100%;
+}
+
+.about-hero-banner-donate:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  /* background-color: rgba(0, 0, 0, 0.45); */
+}
+
 /*19.2 About Hero Text*/
 .about-hero-text {
   position: absolute;
@@ -2997,7 +3067,7 @@ footer p {
 }
 
 .about-hero-text h1 {
-  color: #c52011;
+  color: #ffd300;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 40px;
