@@ -3,7 +3,7 @@
 const path = require("path");
 const fs = require("fs");
 const express = require("express");
-var expressStaticGzip = require("express-static-gzip");
+
 
 var cors = require("cors");
 
@@ -26,8 +26,8 @@ const port = process.env.PORT || 1234;
 const directoryPath = path.join(__dirname, "static");
 const app = express();
 app.use(cors());
-// app.use(express.static(directoryPath));
-app.use("/", expressStaticGzip(directoryPath,{ index: false }));
+app.use(express.static(directoryPath));
+
 
 
 app.use("/assets", express.static(path.join(__dirname, "assets")));
