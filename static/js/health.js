@@ -59,7 +59,7 @@ fetch("https://spreading-smiles.herokuapp.com/healthImages")
         $("#carouselImages").append(
           `<div class="carousel-item ">
                 <picture>
-									<source srcset="./webp/health/${album}/${imageListFromAlbum[i]}.webp" type="image/webp">
+									<source srcset="./webp/health/${imageListFromAlbum[i]}.webp" type="image/webp">
 									<source srcset="./assets/health/${album}/${imageListFromAlbum[i]}.jpg" type="image/jpeg">
 									<img class="d-block w-100" src="./assets/health/${album}/${imageListFromAlbum[i]}.jpg" alt="First slide" />
 								</picture>
