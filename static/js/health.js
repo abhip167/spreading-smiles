@@ -32,7 +32,7 @@ fetch("https://spreading-smiles.herokuapp.com/healthImages")
 									<source srcset="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" type="image/jpeg">
 									<img src="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" alt="" />
 								</picture>
-							<img src="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}" alt="">
+
 							<div class="portfolio-content">
 								<div class="item-icon"><button  class="btn btn-default imageGalleryButton" data-toggle="modal" data-album=${
                   jsondata[i][0]
@@ -61,9 +61,9 @@ fetch("https://spreading-smiles.herokuapp.com/healthImages")
                 <picture>
 									<source srcset="./webp/health/${album}/${imageListFromAlbum[i]}.webp" type="image/webp">
 									<source srcset="./assets/health/${album}/${imageListFromAlbum[i]}.jpg" type="image/jpeg">
-									<img src="./assets/health/${album}/${imageListFromAlbum[i]}.jpg" alt="" />
+									<img class="d-block w-100" src="./assets/health/${album}/${imageListFromAlbum[i]}.jpg" alt="First slide" />
 								</picture>
-                  <img class="d-block w-100" src="./assets/health/${album}/${imageListFromAlbum[i]}" alt="First slide">
+
                   <div class="carousel-caption d-none d-md-block">
 
                     <p>${detailsObject[album].discription}</p>
