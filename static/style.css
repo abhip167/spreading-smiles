@@ -2407,7 +2407,7 @@ footer p {
 /*16.1 Contact Us Banner*/
 .contact-hero-banner {
   background-color: #fff;
-  background-image: url(img/contact-banner.png);
+  background-image: url(img/contact-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -2957,7 +2957,7 @@ footer p {
 /*19.1 About Us Banner*/
 .about-hero-banner {
   background-color: #fff;
-  background-image: url(img/health-banner.png);
+  background-image: url(img/health-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -2982,7 +2982,7 @@ footer p {
 /* About Hero Baner For Education */
 .about-hero-banner-education {
   background-color: #fff;
-  background-image: url(img/education-banner.png);
+  background-image: url(img/education-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -3008,7 +3008,7 @@ footer p {
 /* About Hero Baner For Swacchta */
 .about-hero-banner-swacchta {
   background-color: #fff;
-  background-image: url(img/swacchta-banner.png);
+  background-image: url(img/swacchta-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
@@ -3033,7 +3033,7 @@ footer p {
 /* About Hero Baner For Donate */
 .about-hero-banner-donate {
   background-color: #fff;
-  background-image: url(img/donate-banner.png);
+  background-image: url(img/donate-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
