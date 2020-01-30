@@ -274,7 +274,6 @@
             >
               <div
                 class="youtube-video-wrapper"
-                style="background: url(img/health-about.jpg) top center no-repeat;"
               >
                 <div class="popup-gallery">
                   <a
@@ -512,6 +511,17 @@
       </footer>
     </section>
      <!-- Jquery JS -->
+     <script src="js/modernizr-custom.js"></script>
+     <script>
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+          console.log("webp Detected")
+        } else {
+          // not-supported
+        }
+      });
+    </script>
 	 <script src="js/vendor/jquery-2.2.4.min.js"></script>
 	 <script src="js/health.js"></script>
 	 <!-- Proper JS -->

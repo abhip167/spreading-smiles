@@ -1,12 +1,22 @@
 {
-  "blood": {
-    "albumTitle": "Blood Donation-2015",
-    "discription": "Blood Donation Camp 2016",
-    "year": "2015"
+  "swacchta-kids-2016": {
+    "albumTitle": "Kids Using Dustbin-2016",
+    "discription": "Taught kids to use dustbin n make it a habit every time",
+    "year": "2016"
   },
-  "clothes": {
-    "albumTitle": "Clothes Donation-2015",
-    "discription": "Clothes donation for Missionaries of Charity under 'Share to Care' project.",
-    "year": "2015"
+  "First-Cleanliness Drive": {
+    "albumTitle": "First Cleanliness Drive",
+    "discription": "Initiated the first round of Cleanliness drive today",
+    "year": "2016"
+  },
+  "Cleanliness-Drive-2016": {
+    "albumTitle": "Cleanliness-Drive-2016",
+    "discription": "Ss conducted cleanliness drive with VMC n other residents",
+    "year": "2016"
+  },
+  "Spreading-Smiles-Collab-With-VMC": {
+    "albumTitle": "Spreading-Smiles-Collab-With-VMC",
+    "discription": "After our positive interaction yesterday in Gorwa gaon, today we were able to reduce one container from the site by providing them effective door to door service.",
+    "year": "2016"
   }
 }

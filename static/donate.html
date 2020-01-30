@@ -278,6 +278,17 @@
             <p>All rights reserved @ Spreading Smiles 2020</p>
         </footer>
     </section>
+    <script src="js/modernizr-custom.js"></script>
+     <script>
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+          console.log("webp Detected")
+        } else {
+          // not-supported
+        }
+      });
+    </script>
     <!-- Jquery JS -->
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
     <!-- Proper JS -->

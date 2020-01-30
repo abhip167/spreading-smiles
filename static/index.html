@@ -242,7 +242,12 @@
 						</div>
 						<div class="right-content">
 							<div class="testimonial-img">
-								<img src="img/bhaishree.png" alt="" />
+								<picture>
+									<source srcset="img/webp/bhaishree.webp" type="image/webp">
+									<source srcset="img/bhaishree.png" type="image/jpeg">
+									<img src="img/bhaishree.png" alt="" />
+								</picture>
+
 							</div>
 						</div>
 					</div>
@@ -300,7 +305,12 @@
 					<!--about image-->
 					<div class="col-xl-6 col-lg-6 col-md-6">
 						<div class="home-about-image">
-							<img src="img/about.jpg" alt="" />
+							<picture>
+								<source srcset="img/webp/about.webp" type="image/webp">
+								<source srcset="img/about.jpg" type="image/jpeg">
+									<img src="img/about.jpg" alt="" />
+							</picture>
+
 						</div>
 					</div>
 					<!--about text-->
@@ -465,7 +475,11 @@
 				<div class="row portfolio-item-slider">
 					<!--single potfolio item-->
 					<div class="single-portfolio-item">
-						<img src="img/portfolio/image-1.jfif" alt="" />
+						<picture>
+							<source srcset="img/webp/image-1.webp" type="image/webp">
+							<source srcset="img/image-1.png" type="image/jpeg">
+								<img src="img/image-1.png" alt="" />
+						</picture>
 						<div class="portfolio-item-content">
 							<div class="item-icon">
 								<a href="#"><i class="fas fa-link"></i></a>
@@ -481,7 +495,11 @@
 					</div>
 					<!--single potfolio item-->
 					<div class="single-portfolio-item">
-						<img src="img/portfolio/image-2.jpg" alt="" />
+						<picture>
+							<source srcset="img/webp/image-2.webp" type="image/webp">
+							<source srcset="img/image-2.jpg" type="image/jpeg">
+								<img src="img/image-2.jpg" alt="" />
+						</picture>
 						<div class="portfolio-item-content">
 							<div class="item-icon">
 								<a href="#"><i class="fas fa-link"></i></a>
@@ -497,7 +515,11 @@
 					</div>
 					<!--single potfolio item-->
 					<div class="single-portfolio-item">
-						<img src="img/portfolio/image-3.jfif" alt="" />
+						<picture>
+							<source srcset="img/webp/image-3.webp" type="image/webp">
+							<source srcset="img/image-3.png" type="image/jpeg">
+								<img src="img/image-3.png" alt="" />
+						</picture>
 						<div class="portfolio-item-content">
 							<div class="item-icon">
 								<a href="#"><i class="fas fa-link"></i></a>
@@ -793,6 +815,17 @@
 			<p>All rights reserved @ Spreading Smiles 2020</p>
 		</footer>
 	</section>
+	<script src="js/modernizr-custom.js"></script>
+     <script>
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+          console.log("webp Detected")
+        } else {
+          // not-supported
+        }
+      });
+    </script>
 	<!-- Jquery JS -->
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<!-- Proper JS -->

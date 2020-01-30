@@ -167,8 +167,8 @@
 					</div>
 					<!-- about video-->
 					<div class="col-xl-6 col-lg-6 col-md-6 margin-top-lb-30 margin-top-sb-30">
-						<div class="youtube-video-wrapper"
-							style="background: url(img/swacchta-about.jpg) top center no-repeat;">
+						<div class="youtube-video-wrapper swacchta"
+							>
 							<div class="popup-gallery">
 								<a class="popup-youtube video-play-button"
 									href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSpreadingSmilesAlways%2Fvideos%2F271026120184628%2F&show_text=0&width=560"><span></span></a>
@@ -340,6 +340,17 @@
 			<p>All rights reserved @ Spreading Smiles 2020</p>
 		</footer>
 	</section>
+	<script src="js/modernizr-custom.js"></script>
+     <script>
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+          console.log("webp Detected")
+        } else {
+          // not-supported
+        }
+      });
+    </script>
     <!-- Jquery JS -->
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="js/swacchta.js"></script>

@@ -255,8 +255,8 @@
               class="col-xl-6 col-lg-6 col-md-6 margin-top-lb-30 margin-top-sb-30"
             >
               <div
-                class="youtube-video-wrapper"
-                style="background: url(img/education-about.jpg) top center no-repeat;"
+                class="youtube-video-wrapper education"
+
               >
                 <div class="popup-gallery">
                   <a
@@ -511,6 +511,17 @@
       </footer>
     </section>
     <!-- Jquery JS -->
+    <script src="js/modernizr-custom.js"></script>
+     <script>
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+          console.log("webp Detected")
+        } else {
+          // not-supported
+        }
+      });
+    </script>
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="js/education.js"></script>
     <!-- Proper JS -->

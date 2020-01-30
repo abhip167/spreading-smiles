@@ -749,7 +749,7 @@ ul.dropdown li a:after {
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("img/header-original.jpg");
+
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -764,6 +764,15 @@ ul.dropdown li a:after {
   -ms-flex-align: center;
   align-items: center;
 }
+
+.webp .header-content-area {
+  background-image: url("img/webp/header-original.webp");
+}
+
+.no-webp .header-content-area{
+  background-image: url("img/header-original.jpg");
+}
+
 
 /*3.1 Header Pattern Image*/
 .header-pattern-1 {
@@ -2407,12 +2416,19 @@ footer p {
 /*16.1 Contact Us Banner*/
 .contact-hero-banner {
   background-color: #fff;
-  background-image: url(img/contact-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.webp .contact-hero-banner{
+  background-image: url(img/webp/contact-banner.webp);
+}
+
+.no-webp .contact-hero-banner{
+  background-image: url(img/contact-banner.png);
 }
 
 .contact-hero-banner img {
@@ -2957,13 +2973,22 @@ footer p {
 /*19.1 About Us Banner*/
 .about-hero-banner {
   background-color: #fff;
-  background-image: url(img/health-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
   background-size: cover;
   position: relative;
 }
+
+.webp .about-hero-banner{
+  background-image: url(img/webp/health-banner.webp);
+}
+
+.no-webp .about-hero-banner{
+  background-image: url(img/health-banner.png);
+}
+
+
 
 .about-hero-banner img {
   width: 100%;
@@ -2980,14 +3005,21 @@ footer p {
 }
 
 /* About Hero Baner For Education */
-.about-hero-banner-education {
+ .about-hero-banner-education {
   background-color: #fff;
-  background-image: url(img/education-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.no-webp .about-hero-banner-education {
+  background-image: url(img/education-banner.png);
+}
+
+.webp .about-hero-banner-education {
+  background-image: url(img/webp/education-banner.webp);
 }
 
 .about-hero-banner-education img {
@@ -3008,12 +3040,18 @@ footer p {
 /* About Hero Baner For Swacchta */
 .about-hero-banner-swacchta {
   background-color: #fff;
-  background-image: url(img/swacchta-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.webp .about-hero-banner-swacchta{
+  background-image: url(img/webp/swacchta-banner.webp);
+}
+.no-webp .about-hero-banner-swacchta{
+  background-image: url(img/swacchta-banner.png);
 }
 
 .about-hero-banner-swacchta img {
@@ -3033,12 +3071,19 @@ footer p {
 /* About Hero Baner For Donate */
 .about-hero-banner-donate {
   background-color: #fff;
-  background-image: url(img/donate-banner.svg);
   width: 100%;
   height: 50vh;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.webp .about-hero-banner-donate{
+  background-image: url(img/webp/donate-banner.webp);
+}
+
+.no-webp .about-hero-banner-donate{
+  background-image: url(img/donate-banner.png);
 }
 
 .about-hero-banner-donate img {
@@ -3218,13 +3263,39 @@ footer p {
 }
 
 .youtube-video-wrapper {
-  background: url("img/about-video.png") top center no-repeat;
+
   background-size: cover;
   padding: 160px 0;
   position: relative;
   text-align: center;
   border-radius: 15px;
 }
+
+.webp .youtube-video-wrapper {
+  background: url("img/webp/health-about.webp") top center no-repeat;
+}
+
+.no-webp .youtube-video-wrapper {
+  background: url("img/health-about.jpg") top center no-repeat;
+}
+
+.webp .education{
+  background: url("img/webp/education-about.webp") top center no-repeat;
+}
+
+.no-webp .education{
+  background: url("img/education-about.jpg") top center no-repeat;
+}
+
+.webp .swacchta {
+  background: url("img/webp/swacchta-about.webp") top center no-repeat;
+}
+
+.no-webp .swacchta {
+  background: url("img/swacchta-about.jpg") top center no-repeat;
+}
+
+
 
 .popup-gallery {
   display: inline-block;
