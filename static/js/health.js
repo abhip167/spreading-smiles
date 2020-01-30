@@ -28,7 +28,7 @@ fetch("https://spreading-smiles.herokuapp.com/healthImages")
 					<div class="single-portfolio">
             <div class="portfolio-image">
                 <picture>
-									<source srcset="./webp/assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.webp" type="image/webp">
+									<source srcset="./webp/health/${jsondata[i][1][0]}.webp" type="image/webp">
 									<source srcset="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" type="image/jpeg">
 									<img src="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" alt="" />
 								</picture>

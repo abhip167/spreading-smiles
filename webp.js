@@ -19,5 +19,7 @@ JPEGImages = "./static/img/*.jpg";        // JPEG images
     })],
   });
 
+
+
   console.log(JPEGiles);
 })();
