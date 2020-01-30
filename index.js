@@ -10,15 +10,15 @@ var cors = require("cors");
 
 
 let jsonDataHealth = JSON.parse(
-  fs.readFileSync("./assets/health/details.json", "utf-8")
+  fs.readFileSync("./static/assets/health/details.json", "utf-8")
 );
 
 let jsonDataEducation = JSON.parse(
-  fs.readFileSync("./assets/education/details.json", "utf-8")
+  fs.readFileSync("./static/assets/education/details.json", "utf-8")
 );
 
 let jsonDataSwacchta = JSON.parse(
-  fs.readFileSync("./assets/swacchta/details.json", "utf-8")
+  fs.readFileSync("./static/assets/swacchta/details.json", "utf-8")
 );
 const port = process.env.PORT || 1234;
 
@@ -30,7 +30,7 @@ app.use(express.static(directoryPath));
 
 
 
-app.use("/assets", express.static(path.join(__dirname, "assets")));
+app.use("/assets", express.static(path.join(__dirname, "./static/assets")));
 
 function getFilesFromDir(dir, fileTypes, detailsUrl) {
   var filesToReturn = {};
@@ -123,17 +123,17 @@ app.get("/healthimages", (req, res) => {
 
   //print the txt files in the current directory
   // getFilesFromDir("./assets", [".png"]);
-  res.json(getFilesFromDir("./assets/health", [".png,.jpg"], jsonDataHealth));
+  res.json(getFilesFromDir("./static/assets/health", [".png,.jpg"], jsonDataHealth));
 });
 
 app.get("/educationImages", (req, res) => {
   res.json(
-    getFilesFromDir("./assets/education", [".png,.jpg"], jsonDataEducation)
+    getFilesFromDir("./static/assets/education", [".png,.jpg"], jsonDataEducation)
   );
 });
 app.get("/swacchtaImages", (req, res) => {
   res.json(
-    getFilesFromDir("./assets/swacchta", [".png,.jpg"], jsonDataSwacchta)
+    getFilesFromDir("./static/assets/swacchta", [".png,.jpg"], jsonDataSwacchta)
   );
 });
 
