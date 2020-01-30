@@ -26,7 +26,12 @@ fetch("https://spreading-smiles.herokuapp.com/healthImages")
           detailsObject[jsondata[i][0]].year
         } portfolio-headmove">
 					<div class="single-portfolio">
-						<div class="portfolio-image">
+            <div class="portfolio-image">
+                <picture>
+									<source srcset="./webp/assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.webp" type="image/webp">
+									<source srcset="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" type="image/jpeg">
+									<img src="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" alt="" />
+								</picture>
 							<img src="./assets/health/${jsondata[i][0]}/${jsondata[i][1][0]}" alt="">
 							<div class="portfolio-content">
 								<div class="item-icon"><button  class="btn btn-default imageGalleryButton" data-toggle="modal" data-album=${

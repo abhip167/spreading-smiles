@@ -46,7 +46,8 @@ function getFilesFromDir(dir, fileTypes, detailsUrl) {
         // walkDir(curFile);
         var subfiles = fs.readdirSync(curFile);
         for (var j in subfiles) {
-          currentArray.push(subfiles[j]);
+          const fileName = path.basename(subfiles[j],'.jpg')
+          currentArray.push(fileName);
         }
         filesToReturn["details"] = detailsUrl;
         filesToReturn[files[i]] = currentArray;
