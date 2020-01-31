@@ -1269,7 +1269,7 @@ item-icon button {
 }
 
 .item-text h5 {
-  background: linear-gradient(253.52deg, #ffd300 8.92%, #ff1500 96.59%);
+  background-color: #323656;
   background-clip: border-box;
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
