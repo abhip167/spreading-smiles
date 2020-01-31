@@ -248,23 +248,23 @@ ul {
   width: 150px;
 }
 
-svg {
+#loader {
   overflow: visible;
   width: 100px;
   height: 150px;
 }
-svg g {
+#loader g {
   animation: slide 2s linear infinite;
 }
-svg g:nth-child(2) {
+#loader g:nth-child(2) {
   animation-delay: 0.5s;
 }
-svg g:nth-child(2) path {
+#loader g:nth-child(2) path {
   animation-delay: 0.5s;
   stroke-dasharray: 0px 158px;
   stroke-dashoffset: 1px;
 }
-svg path {
+#loader path {
   stroke: url(#gradient);
   stroke-width: 20px;
   stroke-linecap: round;
