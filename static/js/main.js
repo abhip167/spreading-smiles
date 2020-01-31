@@ -243,13 +243,13 @@ Project Carousel
   /*----------------------------
 	Preloader
 	------------------------------ */
-  // $(window).on("load", function() {
-  //   $("#status").on("fadeOut", "slow");
-  //   $("#preloader")
-  //     .on("delay", 500)
-  //     .on("fadeOut", "slow")
-  //     .remove();
-  // });
+  $(window).on("load", function() {
+    $("#status").on("fadeOut", "slow");
+    $("#preloader")
+      .on("delay", 500)
+      .on("fadeOut", "slow")
+      .remove();
+  });
   /*----------------------------
 	Move Background
 	------------------------------ */
