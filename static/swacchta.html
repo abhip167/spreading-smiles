@@ -55,18 +55,29 @@
 
 	<!--  Preloader Start
 ========================-->
-<div id="preloader" style="background: linear-gradient(253.52deg, #ff6152 8.92%, #ffde42 96.59%); ">
+<div id="preloader" style="background-color: currentColor;">
 	<div id="status">
-		<h4>
-			<center>😇 😇</center>
-		</h4>
-		<img style="margin:13% 0%" src="img/circles.svg" width="50" alt="">
-		<h4>
+		<h4 style="color: yellow; " >
 			<center>
 				Please Wait <br />
 				And Smile
 			</center>
 		</h4>
+		<svg style="margin-top: 25%" >
+			<g>
+			  <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+			</g>
+			<g>
+			  <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+			</g>
+			<defs>
+			  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset="0%" style="stop-color:#ff1500;stop-opacity:1" />
+				<stop offset="100%" style="stop-color:#ffd300;stop-opacity:1" />
+			  </linearGradient>
+			</defs>
+		  </svg>
+
 	</div>
 </div>
 
