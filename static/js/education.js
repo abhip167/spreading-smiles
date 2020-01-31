@@ -1,7 +1,8 @@
 let jsondata;
 let ImageObject = {};
 
-fetch("https://spreading-smiles.herokuapp.com/educationImages")
+// fetch("https://spreading-smiles.herokuapp.com/educationImages")
+fetch("educationImages")
   .then(function(u) {
     return u.json();
   })
@@ -27,7 +28,11 @@ fetch("https://spreading-smiles.herokuapp.com/educationImages")
         } portfolio-headmove">
 					<div class="single-portfolio">
 						<div class="portfolio-image">
-							<img src="./assets/education/${jsondata[i][0]}/${jsondata[i][1][0]}" alt="">
+            <picture>
+            <source srcset="./webp/education/${jsondata[i][1][0]}.webp" type="image/webp">
+            <source srcset="./assets/education/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" type="image/jpeg">
+            <img src="./assets/education/${jsondata[i][0]}/${jsondata[i][1][0]}.jpg" alt="" />
+          </picture>
 							<div class="portfolio-content">
 								<div class="item-icon"><button  class="btn btn-default imageGalleryButton" data-toggle="modal" data-album=${
                   jsondata[i][0]
@@ -49,11 +54,28 @@ fetch("https://spreading-smiles.herokuapp.com/educationImages")
       var album = $(this).attr("data-album");
       var imageListFromAlbum = ImageObject[album].imageArray;
       $("#carouselImages").html("");
+      $("#imageGalleryEducationIndicators").html("");
+
+      for (i = 0; i < imageListFromAlbum.length; i++) {
+        $("#imageGalleryEducationIndicators").append(
+          `<li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="${i}"
+        ></li>`
+        );
+        $("#imageGalleryEducationIndicators li")
+          .first()
+          .addClass("active");
+      }
 
       for (i = 0; i < imageListFromAlbum.length; i++) {
         $("#carouselImages").append(
           `<div class="carousel-item ">
-                  <img class="d-block w-100" src="./assets/education/${album}/${imageListFromAlbum[i]}" alt="First slide">
+          <picture>
+          <source srcset="./webp/education/${imageListFromAlbum[i]}.webp" type="image/webp">
+          <source srcset="./assets/education/${album}/${imageListFromAlbum[i]}.jpg" type="image/jpeg">
+          <img class="d-block w-100" src="./assets/education/${album}/${imageListFromAlbum[i]}.jpg" alt="First slide" />
+        </picture>
                   <div class="carousel-caption d-none d-md-block">
 
                     <p>${detailsObject[album].discription}</p>

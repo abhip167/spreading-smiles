@@ -27,7 +27,11 @@ fetch("https://spreading-smiles.herokuapp.com/swacchtaImages")
         } portfolio-headmove">
 					<div class="single-portfolio">
 						<div class="portfolio-image">
-							<img src="./assets/swacchta/${jsondataSwacchta[i][0]}/${jsondataSwacchta[i][1][0]}" alt="">
+            <picture>
+            <source srcset="./webp/swacchta/${jsondataSwacchta[i][1][0]}.webp" type="image/webp">
+            <source srcset="./assets/swacchta/${jsondataSwacchta[i][0]}/${jsondataSwacchta[i][1][0]}.jpg" type="image/jpeg">
+            <img src="./assets/swacchta/${jsondataSwacchta[i][0]}/${jsondataSwacchta[i][1][0]}.jpg" alt="" />
+          </picture>
 							<div class="portfolio-content">
 								<div class="item-icon"><button  class="btn btn-default imageGalleryButton" data-toggle="modal" data-album=${
                   jsondataSwacchta[i][0]
@@ -49,11 +53,28 @@ fetch("https://spreading-smiles.herokuapp.com/swacchtaImages")
       var album = $(this).attr("data-album");
       var imageListFromAlbum = ImageObjectSwacchta[album].imageArray;
       $("#carouselImages").html("");
+      $("#imageGalleryEducationIndicators").html("");
+
+      for (i = 0; i < imageListFromAlbum.length; i++) {
+        $("#imageGalleryEducationIndicators").append(
+          `<li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="${i}"
+        ></li>`
+        );
+        $("#imageGalleryEducationIndicators li")
+          .first()
+          .addClass("active");
+      }
 
       for (i = 0; i < imageListFromAlbum.length; i++) {
         $("#carouselImages").append(
           `<div class="carousel-item ">
-                  <img class="d-block w-100" src="./assets/swacchta/${album}/${imageListFromAlbum[i]}" alt="First slide">
+          <picture>
+          <source srcset="./webp/swacchta/${imageListFromAlbum[i]}.webp" type="image/webp">
+          <source srcset="./assets/swacchta/${album}/${imageListFromAlbum[i]}.jpg" type="image/jpeg">
+          <img class="d-block w-100" src="./assets/swacchta/${album}/${imageListFromAlbum[i]}.jpg" alt="First slide" />
+        </picture>
                   <div class="carousel-caption d-none d-md-block">
 
                     <p>${detailsObject[album].discription}</p>

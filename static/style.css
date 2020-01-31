@@ -1139,6 +1139,25 @@ ul.dropdown li a:after {
   background: linear-gradient(253.52deg, #f95647 8.92%, #ffd300 96.59%);
 }
 
+.carousel-indicators li {
+  border-radius: 18px;
+  height: 7px;
+  background-color: #ff0018;
+}
+
+.carousel-indicators .active {
+  background-color: #ffd300;
+}
+
+.carousel-control-next{
+  background: linear-gradient(253.52deg, #f95647 8.92%, #ffd300 96.59%);
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 10%;
+}
+
+
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background: linear-gradient(253.52deg, #f95647 8.92%, #ffd300 96.59%);

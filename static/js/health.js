@@ -54,6 +54,19 @@ fetch("https://spreading-smiles.herokuapp.com/healthImages")
       var album = $(this).attr("data-album");
       var imageListFromAlbum = ImageObject[album].imageArray;
       $("#carouselImages").html("");
+      $("#imageGalleryEducationIndicators").html("");
+
+      for (i = 0; i < imageListFromAlbum.length; i++) {
+        $("#imageGalleryEducationIndicators").append(
+          `<li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="${i}"
+        ></li>`
+        );
+        $("#imageGalleryEducationIndicators li")
+          .first()
+          .addClass("active");
+      }
 
       for (i = 0; i < imageListFromAlbum.length; i++) {
         $("#carouselImages").append(
