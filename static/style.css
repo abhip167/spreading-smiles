@@ -1433,6 +1433,10 @@ item-icon button {
   z-index: -1;
 }
 
+.bhaishree-quote {
+  font-size: 30px;
+}
+
 .quotation {
   padding-left: 15px;
 }
