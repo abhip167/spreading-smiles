@@ -3,9 +3,8 @@
 const path = require("path");
 const fs = require("fs");
 const express = require("express");
-
-
 var cors = require("cors");
+var compression = require('compression');
 
 
 
@@ -25,6 +24,7 @@ const port = process.env.PORT || 1234;
 //joining path of directory
 const directoryPath = path.join(__dirname, "static");
 const app = express();
+app.use(compression()); //Compress all routes
 app.use(cors());
 app.use(express.static(directoryPath));
 
